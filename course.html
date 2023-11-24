@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title> 
+    
+</head>
+<body>
+
+    <header>
+        <div class="navber bg-[#f7f6f7] shadow-xl">
+            <nav class=" flex items-center w-[90%] mx-auto h-20  ">
+                <div class="flex-1 w-64">
+                    <img class="w-64 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute bg-[#f7f6f7] md:min-h-fit  min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="course.html">Course</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="instructor.htm">Instructors</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <button class="font-bold"><a href="login.html">Login</a></button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="">
+            <div class="w-[100%] h-[400px] pt-28 bg-no-repeat opacity- text-center" style="background-image: url(img/colorful-pencils-concept-with-copy-space_23-2148812400.jpg); background-size: 100% 100%; " >
+                <h1 class="text-[50px]  font-bold pt-10"> Popular Course</h1>
+                <p class="text-[20px] ">Home / Pages / Course</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Course">
+        <div class="card-animation grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto gap-2 mt-24 mb-14">
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-2xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-.webp" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$149.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(128)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Computer Office Application</h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-1.jpg" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$184.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(182)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Web Design & Development </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-12.jpg " class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$115.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(122)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]"> Graphic Design </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-14.jpg" class="w-[100%] h-[200px] " alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$144.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%] " alt="">
+                    <p>(128)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Digital Marketing   </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Course">
+        <div class="card-animation grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto gap-2 mt-24 mb-14">
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-2xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-13.jpg" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$119.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(112)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Spoken English</h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-11.jpg" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$102.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(132)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Apparel Merchandising </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-8.jpeg" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$169.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(166)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]"> Graphics Design & Freelancing </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-9.jpg" class="w-[100%] h-[200px] " alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$99.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%] " alt="">
+                    <p>(102)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Computer Office With Data Entry</h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Instructors">
+        <div class="text-center my-5">
+            <h1 class="text-[50px] text-[#28576f] font-bold">Expert Instructors</h1>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto bg-white mb-20">
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-2.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mr. Asraf Haasan</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-3.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mrs. Treusch</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img w-[100%] h-[400px]">
+                    <img src="img/i-5.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mr. Thowhidul</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-4.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mrs.Sabrin</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-[#181d38] pb-10">
+        <div class="grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between pt-20 w-[90%] mx-auto text-white">
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] py-2">Contact</h4>
+                <span class="font-bold text-[17px]">Address: </span><span>562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="font-bold text-[17px] ">Phone: </span><span> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="font-bold text-[17px] ">Hours:</span><span> 10:00, Mon - Sat</span> <br>
+                <p class="mt-8">
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                </p>
+            </div> 
+            <div class=" my-10">
+                <h4 class="font-bold text-[18px]">About</h4>
+                <p class="pt-2"><a href="#">About Us</a></p>
+                <p class="pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="font-bold text-[18px] pb-2">My Account</h4>
+                <div class=" text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="pt-2"><a href="#">View Cart</a><p>
+                    <p class="pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] pl-2">Install App</h4>
+                <p class="pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/play.jpg" alt=""></span>
+                </div>
+                <p class="pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="text-white text-[15px] pt-5">2023, Always Support - HTML Tailwind CSS And JAVASCRIPT  Copyright @2023 University. Designed By : MD ARAFAT</p>
+        </div>
+    </footer>
+
+     <script src="main.js"></script>
+</body>
+</html

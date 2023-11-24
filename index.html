@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title> 
+    
+</head>
+<body class="whitespace-normal">
+
+    <header>
+        <div class="navber bg-[#f7f6f7] shadow-xl">
+            <nav class=" flex items-center w-[90%] mx-auto h-20  ">
+                <div class="flex-1 w-64">
+                    <img class="w-64 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute md:min-h-fit bg-[#f7f6f7] min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="course.html">Course</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="instructor.htm">Instructors</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <button class="font-bold"><a href="login.html">Login</a></button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slider grid items-center lg:w-[100%] lg:h-[850px] md:w-[100%] md:h-[600px] w-[100%] h-[700px] pt-10">
+            <div class="banner-text w-[90%] mx-auto">
+                <h2 class="text-[30px] leading-none">EASY <span class="font-bold text-[#81df81]">LEARN</span></h2>
+                <h2 class="text-[40px] font-bold text-[#bc9a7d]">Best Education </h2>
+                <h1 class="text-[60px] font-bold text-[#28576f] leading-none ">Our University</h1>
+                <p class="text-[17px] text-[#28576f] font-semibold mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis <br> consequatur nihil laudantium omnis nemo deserunt in at. Alias, architecto aut!</p>
+                <button class="font-bold  text-[#28576f] mt-8"><a href="apply.html">Apply Now</a></button>
+
+                <p class="mt-8">
+                    <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></span>
+                    <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></span>
+                    <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><a href="https://bd.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></span>
+                    <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a></span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card-animation grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto gap-2 mt-24 mb-14">
+            <div class="card-1 w-[90%] h-[300px]  text-center bg-[#f0fbfc] p-10 mx-5 my-5 hover:bg-[#06BBCC] hover:text-white text-[#28576f] shadow-xl">
+                <h1 class="text-[50px]"><i class="fa-solid fa-graduation-cap"></i></h1>
+                <h1 class="text-[25px] font-bold pt-5">Skilled Instructors</h1>
+                <p class="text-[18px] pt-5">Diam elitr kasd sed at elitr sed <br> ipsum justo dolor sed clita amet <br> diam</p>
+            </div>
+            <div class="card-1  w-[90%] h-[300px] text-center bg-[#f0fbfc] p-10 mx-5 my-5 hover:bg-[#06BBCC] hover:text-white text-[#28576f] shadow-xl">
+                <h1 class="text-[50px]"><i class="fa-solid fa-globe"></i></h1>
+                <h1 class="text-[25px] font-bold pt-5">Online Classes</h1>
+                <p class="text-[18px] pt-5">Diam elitr kasd sed at elitr sed <br> ipsum justo dolor sed clita amet <br> diam</p>
+            </div>
+            <div class="card-2  w-[90%] h-[300px] text-center bg-[#f0fbfc] p-10 mx-5 my-5 hover:bg-[#06BBCC] hover:text-white text-[#28576f] shadow-xl">
+                <h1 class="text-[50px]"><i class="fa-solid fa-house-circle-check"></i></h1>
+                <h1 class="text-[25px] font-bold pt-5">Home Projectss</h1>
+                <p class="text-[18px] pt-5">Diam elitr kasd sed at elitr sed <br> ipsum justo dolor sed clita amet <br> diam</p>
+            </div>
+            <div class="card-2  w-[90%] h-[300px] text-center bg-[#f0fbfc] p-10 mx-5 my-5 hover:bg-[#06BBCC] hover:text-white text-[#28576f] shadow-xl" >
+                <h1 class="text-[50px]"><i class="fa-solid fa-book-open-reader"></i></h1>
+                <h1 class="text-[25px] font-bold pt-5">Book Library</h1>
+                <p class="text-[18px] pt-5">Diam elitr kasd sed at elitr sed <br> ipsum justo dolor sed clita amet <br> diam</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="text-center mb-5">
+            <h1 class="text-[50px] text-[#28576f] font-bold ">About Us</h1>
+            <p class="text-[20px] text-[#28576f] font-bold ">  Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p> 
+        </div>
+        <div class="grid lg:grid-cols-2 md:grid-cols-1 w-[80%] mx-auto items-center ">
+            <div class="about-img mb-10 mt-10">
+                <img src="img/about-img.jpg" class="w-[90%] h-[450px] mx-auto"  alt="">
+            </div>
+            <div class="about-text mb-10 mt-10">
+                <h1 class="text-[40px] font-bold text-[#06BBCC]">Welcome to eLEARNING-</h1>
+                <p class="text-[18px] pt-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et <br> eos. Clita erat ipsum et lorem et sit.</p>
+                <p class="text-[18px] pt-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et <br> eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore <br> erat amet</p>
+                <table class="w-[100%] mt-5">
+                    <tr class="w-[50%] text-[18px]">
+                      <td class="whitespace-nowrap"><i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i> Skilled Instructors</td>
+                      <td class="whitespace-nowrap"><i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i> Online Classes</td>
+                    </tr>
+                    <tr class="w-[50%] text-[18px]">
+                      <td><i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i> nternational Certificate </td>
+                      <td><i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i> Skilled Instructors</td>
+                    </tr>
+                    <tr class="w-[50%] text-[18px]">
+                      <td> <i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i>Online Classes</td>
+                      <td> <i class="fa-solid fa-right-long text-[#06BBCC] pr-2"></i>International Certificate</td>
+                    </tr>
+                  </table>
+                  <button class="font-bold text-[#28576f] mt-8"><a href="#">Apply Now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="Instructors">
+        <div class="text-center my-5">
+            <h1 class="text-[50px] text-[#28576f] font-bold">Expert Instructors</h1>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto bg-white mb-20">
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-2.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mr. Asraf Haasan</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-3.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mrs. Treusch</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img w-[100%] h-[400px]">
+                    <img src="img/i-5.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mr. Thowhidul</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-[90%] h-[450px] mx-auto border-2 rounded-xl bg-white shadow-xl my-8">
+                <div class="img">
+                    <img src="img/i-4.jpg" class="w-[100%] h-[400px] " alt="">
+                </div>
+                <div class="content w-[100%] h-[80px] text-center bg-white text-[#181d38]">
+                    <h1 class="text-[30px] py-4 font-bold text-[#28576f]">Mrs.Sabrin</h1>
+                    <h1 class="text-[25px] font-semibold ">Instructor: <span class="text-[25px] font-semibold">Our University</span></h1>
+                    <p class="px-2 pt-2 text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p class="mt-8">
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text-[20px] bg-[#def0f1] py-2 px-3 text-[#28576f] rounded-full hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="text-center mt-20 pb-10">
+            <h1 class="text-[25px] text-[#28576f] font-bold ">LATEST EVENTS</h1>
+            <h1 class="text-[40px] text-[#28576f] font-bold ">Our Upcoming Events</h1>
+        </div>
+        <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-[90%] mx-auto pb-20">
+            <div class="events-1">
+                <div class=" grid lg:grid-cols-4 md:grid-cols-2 bg-[#ffffff] shadow-2xl w-[95%] mx-auto items-center mb-5 border-2">
+                    <div class="col-span-2 my-3"> 
+                        <img class="w-[90%] h-[250px] mx-auto" alt="hero" src="img/course-1.jpg">
+                    </div>
+                    <div class="col-span-2 m-3">
+                        <p class="text-[#06BBCC]  text-[15px] font-bold">ART COMPETITION</p>
+                        <h1 class="pt-5 text-[25px] font-bold text-black">Graphics design conference</h1>
+                        <p class="pt-5">Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.                        </p>
+                        <div class="pt-5 text-[15px] text-[#06BBCC]">
+                            <span class=""><i class="fa-regular fa-calendar"></i> 30 Mar. 2023</span>
+                            <span class="float-right mr-2 "><i class="fa-solid fa-location-dot"></i> Chittagong</span>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div class="events-2">
+                <div class=" grid lg:grid-cols-4 md:grid-cols-2 bg-[#ffffff] shadow-2xl w-[95%] mx-auto items-center mb-5 border-2">
+                    <div class="col-span-2 my-3">
+                      <img class="w-[90%] h-[250px] mx-auto" alt="hero" src="img/about-1.jpg">
+                    </div>
+                    <div class="col-span-2 m-3">
+                        <p class="text-[#06BBCC]  text-[15px] font-bold">LEARNING ENGLISH</p>
+                        <h1 class="pt-5 text-[25px] font-bold text-black">Important learning english</h1>
+                        <p class="pt-5">Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.                        </p>
+                        <div class="pt-5 text-[15px] text-[#06BBCC]">
+                            <span class=""><i class="fa-regular fa-calendar"></i> 01 Apr. 2023</span>
+                            <span class="float-right mr-2 "><i class="fa-solid fa-location-dot"></i> Chittagong</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="events-1">
+                <div class=" grid lg:grid-cols-4 md:grid-cols-2 bg-[#ffffff] shadow-2xl w-[95%] mx-auto items-center mb-5 border-2">
+                    <div class="col-span-2 my-3">
+                      <img class="w-[90%] h-[250px] mx-auto" alt="hero" src="img/course-3.jpg">
+                    </div>
+                    <div class="col-span-2 m-3">
+                        <p class="text-[#06BBCC]  text-[15px] font-bold">CREATIVE DAY</p>
+                        <h1 class="pt-5 text-[25px] font-bold text-black">Annual creative meetup</h1>
+                        <p class="pt-5">Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.                        </p>
+                        <div class="pt-5 text-[15px] text-[#06BBCC]">
+                            <span class=""><i class="fa-regular fa-calendar"></i> 02 Apr. 2023</span>
+                            <span class="float-right mr-2 "><i class="fa-solid fa-location-dot"></i> Chittagong</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="events-2">
+                <div class=" grid lg:grid-cols-4 md:grid-cols-2 bg-[#ffffff] shadow-2xl w-[95%] mx-auto items-center mb-5 border-2">
+                    <div class="col-span-2 my-3">
+                      <img class="w-[90%] h-[250px] mx-auto" alt="hero" src="img/course-2.jpg">
+                    </div>
+                    <div class="col-span-2 m-3">
+                        <p class="text-[#06BBCC]  text-[15px] font-bold">ART COMPETITION</p>
+                        <h1 class="pt-5 text-[25px] font-bold text-black">Digital arts and reshaping</h1>
+                        <p class="pt-5">Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.                        </p>
+                        <div class="pt-5 text-[15px] text-[#06BBCC]">
+                            <span class=""><i class="fa-regular fa-calendar"></i>  03 Apr. 2023                            </span>
+                            <span class="float-right mr-2 "><i class="fa-solid fa-location-dot"></i> Chittagong</span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <section class="Course">
+        <div class="text-center">
+            <h1 class="text-[50px] text-[#28576f] font-bold">Popular Course</h1>
+        </div>
+        <div class="card-animation grid lg:grid-cols-4 md:grid-cols-2 w-[90%] mx-auto gap-2 mt-10 mb-14">
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-2xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-.webp" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$149.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(128)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Computer Office Application</h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-1.jpg" class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$199.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(182)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Web Design & Development </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center  mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-12.jpg " class="w-[100%] h-[200px]" alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$119.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%]" alt="">
+                    <p>(122)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]"> Graphic Design </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-1 w-[90%] h-[450px]  text-center mx-5 my-5 shadow-xl">
+                <div class="w-[100%] h-[210px]">
+                    <img src="img/t-14.jpg" class="w-[100%] h-[200px] " alt="">
+                </div>
+                <h1 class="text-[25px] font-bold pt-5 text-[#181d38]">$144.00 </h1>
+                <span class="flex justify-center">
+                    <img src="img/stars (1).png " class="w-[30%] " alt="">
+                    <p>(118)</p>
+                </span>
+                <h1 class="text-[20px] font-bold pt-4 text-[#181d38]">Digital Marketing   </h1>
+                <h1 class="text-[20px] font-bold text-[#181d38] "> Course for Beginners</h1>
+                <table class="w-[100%] mt-5">
+                    <tr class="border-t-2">
+                        <td class="text-[17px] border-r-2 p-3"><i class="fa-solid fa-user text-[#06BBCC] pr-1"></i>John Doe</td>
+                        <td class="text-[17px] border-r-2 p-3"> <i class="fa-regular fa-clock text-[#06BBCC] pr-1"></i>1.49 Hrs</td>
+                        <td class="text-[17px] p-3"><i class="fa-solid fa-users text-[#06BBCC] pr-1"></i>30 Students</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="text-center">
+            <h1 class="text-[50px] text-[#28576f] font-bold py-10">Contact For Any Query</h1>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 w-[90%] mx-auto mb-10">
+            <div class="mt-2 pl-4">
+                <h1 class="text-[30px] font-bold">Get In Touch</h1>
+                <p class="text-[18px] pt-3">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. </p>
+                <div class="flex items-center pt-8">
+                    <p class="bg-[#06BBCC] px-4 py-3"> <i class="fa-solid fa-location-dot text-[25px] text-white"></i></p>
+                    <div class="pl-2"> 
+                        <h1 class="text-[25px] font-bold text-[#06BBCC]">Office</h1>
+                        <p class="text-[16px]">123 Street, Chittagong, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="flex items-center pt-5">
+                    <p class="bg-[#06BBCC] px-4 py-3"> <i class="fa-solid fa-phone text-[25px] text-white"></i></p>
+                    <div class="pl-2"> 
+                        <h1 class="text-[25px] font-bold text-[#06BBCC]">Mobile</h1>
+                        <p class="text-[16px]">+012 345 67890</p>
+                    </div>
+                </div>
+                <div class="flex items-center pt-5">
+                    <p class="bg-[#06BBCC] px-4 py-3"><i class="fa-regular fa-envelope text-[25px] text-white"></i></p>
+                    <div class="pl-2"> 
+                        <h1 class="text-[25px] font-bold text-[#06BBCC]">Email</h1>
+                        <p class="text-[16px]">info@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto my-3 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.013149485637!2d91.8323545758983!3d22.353132340977215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad270603b18763%3A0x4d35b9ae673cf2b5!2sSkill%20Development%20Training%20Center%2C%20DevPahar%2C%20Chittagong!5e0!3m2!1sen!2sbd!4v1699281868797!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="w-[90%] mx-auto my-3">
+                <input class="border-2 w-[100%] h-[50px] my-2 pl-2 rounded-lg" type="text"  placeholder="Name">
+                <input class="border-2 w-[100%] h-[50px] my-2 pl-2 rounded-lg" type="text"  placeholder="Email">
+                <input class="border-2 w-[100%] h-[50px] my-2 pl-2 rounded-lg" type="text"  placeholder="Subject">
+                <input class="border-2 w-[100%] h-[150px] my-2 pl-2" type="text" placeholder="Message"> <br>
+                <button class="font-bold  text-[#28576f] mt-8"><a href="#">Submit</a></button>
+            </div>
+        </div>
+    </section>
+ 
+    <footer class="bg-[#181d38] pb-10">
+        <div class="grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between pt-20 w-[90%] mx-auto text-white">
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] py-2">Contact</h4>
+                <span class="font-bold text-[17px]">Address: </span><span>562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="font-bold text-[17px] ">Phone: </span><span> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="font-bold text-[17px] ">Hours:</span><span> 10:00, Mon - Sat</span> <br>
+                <p class="mt-8">
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                </p>
+            </div> 
+            <div class=" my-10">
+                <h4 class="font-bold text-[18px]">About</h4>
+                <p class="pt-2"><a href="#">About Us</a></p>
+                <p class="pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="font-bold text-[18px] pb-2">My Account</h4>
+                <div class=" text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="pt-2"><a href="#">View Cart</a><p>
+                    <p class="pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] pl-2">Install App</h4>
+                <p class="pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/play.jpg" alt=""></span>
+                </div>
+                <p class="pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="text-white text-[15px] pt-5">2023, Always Support - HTML Tailwind CSS And JAVASCRIPT  Copyright @2023 University. Designed By : MD ARAFAT</p>
+        </div>
+    </footer>
+
+     <script src="main.js"></script>
+</body>
+</html

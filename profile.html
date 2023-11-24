@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title> 
+    
+</head>
+<body class="bg-[#f7f6f7]">
+
+    <header>
+        <div class="navber bg-[#f7f6f7] shadow-xl">
+            <nav class=" flex items-center w-[90%] mx-auto h-20  ">
+                <div class="flex-1 w-64">
+                    <img class="w-64 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute md:min-h-fit bg-[#f7f6f7] min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="course.html">Course</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="instructor.htm">Instructors</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <button class="font-bold"><a href="login.html">Login</a></button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="pt-20">
+            <div class="w-[100%] h-[200px] text-center" >
+                <h1 class="text-[50px] pt-10 font-bold text-[#28576f] ">Welcome Your Profile</h1>
+                <p class="text-[20px] text-[#bc9a7d]">Home / Login / Profile</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="grid lg:grid-cols-3 md:grid-cols-1 w-[80%] mx-auto mb-20">
+            <div class="w-[80%] h-[800px] mx-auto border-2 p-5 bg-[#ffff]">
+                <div class="w-[70%] mx-auto">
+                    <img src="img/profile.jpg" class="w-[100%] rounded-full" alt="">
+                    <h1 class="text-center text-[20px] pt-2 font-bold">MD ARAFAT HOSSAIN</h1>
+                </div>
+                <table class="w-[100%] mx-auto border-2 mt-5">
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5"> Student Id :</td>
+                      <td class=""> 33400000021</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5"> Batch : </td>
+                      <td class="">5th</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5">Section :</td>
+                      <td class="">A</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                        <td class="pl-5">Gender :</td>
+                        <td class="">Male</td>
+                      </tr>
+                      <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                        <td class="pl-5">Academic Year :</td>
+                        <td class="">2020</td>
+                      </tr>
+                      <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                        <td class="pl-5">Blood :</td>
+                        <td class="">O-</td>
+                      </tr>
+                </table>
+
+            </div>
+            
+            <div class="col-span-2 ">
+                <form class="grid lg:grid-cols-2 md:grid-cols-1  w-[90%] h-[800px] mx-auto border-2 p-10 bg-[#ffff]">
+                    <span class="col-span-2">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">First name:</label><br>
+                        <input type="text" placeholder="first name" class="w-[95%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Phone:</label><br>
+                        <input type="text" placeholder="enter Phone" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Date Of Birth:</label><br>
+                        <input type="text" placeholder="birthday" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Gender:</label><br>
+                        <input type="text" placeholder="Gender" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Location:</label><br>
+                        <input type="text" placeholder="Location" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-2 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Email:</label><br>
+                        <input type="text" placeholder="enter Your email"class="w-[95%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>                        
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium "> Password:</label><br>
+                        <input type="text" placeholder="enter Your password" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Confirm Password:</label><br>
+                        <input type="text" placeholder="Confirm Password" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-1 mt-5">
+                        <p>
+                        <label for="fname" class="text-[20px] font-medium ">Verify:</label><br>
+                        <input type="text" placeholder="pin number" class="w-[90%] h-[50px] pl-4 mt-2 border-2"><br>
+                        </p>
+                    </span>
+                    <span class="col-span-2 mt-10">
+                        <button class="font-bold"><a href="#">Save</a></button>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="subject">
+        <div>
+            <table class="w-[75%] mx-auto border-2  bg-[#ffff] my-10">
+                <tr class="w-[100%] h-[70px] text-[18px] border-b-2 font-bold bg-[#06BBCC] text-white">
+                  <td class="w-[20%] text-center border-r-2">Paper Code </td>
+                  <td class=" w-[50%] pl-2 border-r-2"> Paper Title</td>
+                  <td class="w-[30%] text-center border-r-2"> Obtained Letter Grade</td>
+                </tr>
+                <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">121101 </td>
+                    <td class=" w-[50%]"> HTML stands for Hyper Text Markup Language</td>
+                    <td class="w-[30%] text-center"> B-</td>
+                </tr>
+                <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">131601 </td>
+                    <td class=" w-[50%]">CSS stands for Cascading Style Sheets </td>
+                    <td class="w-[30%] text-center">B+</td>
+                </tr>
+                <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">131603</td>
+                    <td class=" w-[50%]">JavaScript is the world's most popular programming language.</td>
+                    <td class="w-[30%] text-center"> B+</td>
+                  </tr>
+                  <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">133201 </td>
+                    <td class=" w-[50%]">Node.js allows you to run JavaScript on the server. </td>
+                    <td class="w-[30%] text-center">B</td>
+                  </tr>
+                  <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">133203 </td>
+                    <td class=" w-[50%]">React is a JavaScript library for building user interfaces. </td>
+                    <td class="w-[30%] text-center"> B+</td>
+                  </tr>
+                  <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                    <td class="w-[20%] text-center">133204 </td>
+                    <td class=" w-[50%]">Python is a popular programming language. </td>
+                    <td class="w-[30%] text-center"> A+</td>
+                  </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer class="bg-[#181d38] pb-10">
+        <div class="grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between pt-20 w-[90%] mx-auto text-white">
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] py-2">Contact</h4>
+                <span class="font-bold text-[17px]">Address: </span><span>562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="font-bold text-[17px] ">Phone: </span><span> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="font-bold text-[17px] ">Hours:</span><span> 10:00, Mon - Sat</span> <br>
+                <p class="mt-8">
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                </p>
+            </div> 
+            <div class=" my-10">
+                <h4 class="font-bold text-[18px]">About</h4>
+                <p class="pt-2"><a href="#">About Us</a></p>
+                <p class="pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="font-bold text-[18px] pb-2">My Account</h4>
+                <div class=" text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="pt-2"><a href="#">View Cart</a><p>
+                    <p class="pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] pl-2">Install App</h4>
+                <p class="pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/play.jpg" alt=""></span>
+                </div>
+                <p class="pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="text-white text-[15px] pt-5">2023, Always Support - HTML Tailwind CSS And JAVASCRIPT  Copyright @2023 University. Designed By : MD ARAFAT</p>
+        </div>
+    </footer>
+
+     <script src="main.js"></script>
+</body>
+</html

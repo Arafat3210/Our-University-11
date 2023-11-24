@@ -1,0 +1,143 @@
+.navber{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.link-nav{
+  font-weight: 600;
+  font-size: 20px;
+}
+.link-nav:hover,
+.link-nav:focus{
+  color:#088178 ;
+}
+.link-nav::after{
+  content: "";
+  background-color: #088178;
+  height: 3px;
+  width: 0;
+  margin: auto;
+  display: block;
+  margin-top: 5px;   
+}
+
+.link-nav:hover::after,
+.link-nav:focus::after{
+  width: 100%;
+  transition:  0.3s linear;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 5px #06BBCC, -1px -1px 5px #06BBCC ;
+}
+button::before{
+  content: '';
+  width: 0;
+  height: 40px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right , #f0fbfc, #06BBCC);
+  transition: 1.5s;
+  z-index: -1;
+}
+
+button:hover::before{
+  width: 150px;
+}
+
+      /* banner-section */
+
+.slider{
+  background-image: url(img/bg-1.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: change 40s infinite ease-in-out;
+
+
+}
+    
+@keyframes change{
+  0%{
+    background-image: url(img/bg-1.png);
+  }
+  20%{
+    background-image: url(img/bg-2.png);
+  }
+  30%{
+    background-image: url(img/bg-3.png);
+  }
+  40%{
+    background-image: url(img/bg-4.png);
+  }
+  50%{
+    background-image: url(img/bg-5.png);
+  }
+  60%{
+    background-image: url(img/bg-6.png);
+  }
+  70%{
+    background-image: url(img/bg-1.png);
+  }
+  80%{
+    background-image: url(img/bg-2.png);
+  }  
+  100%{
+    background-image: url(img/bg-4.png);
+  }
+}
+
+.banner-text {
+  animation: slideIn 1.5s;
+} 
+
+@keyframes slideIn {
+  0%{
+    transform: translatey(-100%);
+  }
+  100%{
+    transform: translatey(0%);
+  }
+}
+
+      /* features-section and Course-section */
+.card-1:hover{
+  transform: translateY(-15px);
+  transition: .5s;
+}
+.card-2:hover{
+  transform: translateY(-15px);
+  transition: .5s;
+}
+
+      /* Instructors-card-1 */
+
+  .card{
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    z-index: 1;
+
+}
+.card .content{
+    position: absolute;
+    bottom: 0;
+    transition: 1s;
+}
+
+.card:hover .content{
+    height: 230px;
+    
+}
+.card:hover{
+  transform: scale(1.1);
+}
+

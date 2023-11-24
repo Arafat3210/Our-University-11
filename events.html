@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title> 
+    
+</head>
+<body>
+
+    <header>
+        <div class="navber bg-[#f7f6f7] shadow-xl">
+            <nav class=" flex items-center w-[90%] mx-auto h-20  ">
+                <div class="flex-1 w-64">
+                    <img class="w-64 cursor-pointer" src="img/logo.png" alt="...">
+                </div>
+                <div class="">
+                    <div id="navber"class="duration-700 md:static absolute bg-[#f7f6f7] md:min-h-fit  min-h-[40vh] top-[90%] left-[-50%] w-[50%] px-8 ">
+                        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-5">
+                            <li>
+                                <a class="link-nav " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="course.html">Course</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="instructor.htm">Instructors</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a class="link-nav" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end gap-6">
+                    <button class="font-bold"><a href="login.html">Login</a></button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="">
+            <div class="w-[100%] h-[400px] pt-28 bg-no-repeat opacity- text-center" style="background-image: url(img/colorful-pencils-concept-with-copy-space_23-2148812400.jpg); background-size: 100% 100%; " >
+                <h1 class="text-[50px]  font-bold pt-10"> Events</h1>
+                <p class="text-[20px] ">Home / Pages / Events</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="grid lg:grid-cols-4 md:grid-cols-1 w-[80%] mx-auto my-20 ">
+            <div class="col-span-3">
+                <div class="w-[100%] h-[400px] mx-auto">
+                    <img src="img/events.webp" class="w-[100%] h-[400px] mx-auto" alt="">
+                </div>
+                <table class="w-[100%] mx-auto mt-5 text-center ">
+                    <tr class="w-[100%] text-[18px]">
+                      <td class="font-bold"> <i class="fa-solid fa-clock pr-2"></i>Start Time</td>
+                      <td class="font-bold"><i class="fa-solid fa-flag pr-2"></i>Start Time </td>
+                      <td class="font-bold"><i class="fa-solid fa-location-dot pr-2"></i>Address</td>
+                      </td>
+                    </tr>
+                    <tr class="w-[100%] text-[18px]">
+                        <td>10:00 am</td>
+                        <td>04:00 am</td>
+                        <td>10:00 am</td>
+                      </tr>
+                    <tr class="w-[100%] text-[18px] pl-20">
+                      <td> Sunday,July 08,2023</td>
+                      <td> Monday,July 08,2023</td>
+                      <td> Monday,July 08,2023</td>
+                    </tr>
+                </table>
+                <div class="pt-10">
+                    <h1 class="text-[25px] font-bold">Events Description</h1>
+                    <p class="text-[17px] pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+                        atque maiores delectus in mollitia nulla tempora! Reiciendis porro 
+                        culpa alias hic officia, tempora libero. Eligendi vero iusto ipsum 
+                        perspiciatis ipsa? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Distinctio perferendis quo quos dolores possimus impedit a amet 
+                        magni repudiandae, quod in tempore nulla ducimus nihil est doloribus
+                        ab asperiores ad!</p>
+                        
+                </div>
+                <div class="pt-10">
+                    <h1 class="text-[25px] font-bold">Event Content</h1>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2 pt-5"></i> This template is designed to equip you with the best possible user experience</p>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2"></i> Elearning is a free education website template built with Bootstrap 5.</p>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2"></i> ts minimal and refreshing design can easily impress anyone. </p>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2"></i>  It is crafted for educational web portals like universities, online course websites.</p>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2"></i> This highly customizable education web template is coded in block-based structure</p>
+                    <p class="text-[18px]"><i class="fa-solid fa-circle-play text-[12px] pr-2"></i> If you are looking for a modern & great-looking HTML template.</p>
+                </div>
+                <div>
+                    <h1 class="text-[25px] font-bold pt-10">Evant Participnts</h1>
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 w-[70%] pt-5 mb-5">
+                        <div class="w-[70%] mx-auto">
+                            <img src="img/i-5.jpg" class="w-[100%] h-[150px]" alt="">
+                            <h1 class="text-center text-[18px] font-bold  pt-2">T Rayed</h1>
+                            <p class="text-center text-[18px]">Chif Principal</p>
+                        </div>
+                        <div class="w-[70%] mx-auto" >
+                            <img src="img/i-3.jpg" class="w-[100%] h-[150px]" alt="">
+                            <h1 class="text-center text-[18px] font-bold  pt-2">S Tamin</h1>
+                            <p class="text-center text-[18px]">Head Teacher</p>
+                        </div>
+                        <div class="w-[70%]  mx-auto">
+                            <img src="img/i-4.jpg" class="w-[100%] h-[150px]" alt="">
+                            <h1 class="text-center text-[18px] font-bold  pt-2">FH Shuvo</h1>
+                            <p class="text-center text-[18px]">Chif Principal</p>
+                        </div>
+                        <div class="w-[70%]  mx-auto">
+                            <img src="img/i-9.jpg" class="w-[100%] h-[150px]" alt="">
+                            <h1 class="text-center text-[18px] font-bold pt-2">T Lalen</h1>
+                            <p  class="text-center text-[18px]">Head Teacher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto">
+                <table class="w-[100%] mx-auto border-2 ">
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2 text-white">
+                        <td class=" text-center bg-[#06BBCC] pl-14 font-bold"> Totle Slots</td>
+                        <td class=" bg-[#06BBCC]"></td>
+                      </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5"> Totle Slots</td>
+                      <td class=""> 30</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5">Booked Time </td>
+                      <td class="">0</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                      <td class="pl-5">Booked Slots</td>
+                      <td class="">0</td>
+                    </tr>
+                    <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                        <td class="pl-5">Cost</td>
+                        <td class="">Free</td>
+                      </tr>
+                      <tr class="w-[100%] h-[70px] text-[18px] border-b-2">
+                        <td class="pl-5">Quantity</td>
+                        <td class="">2</td>
+                      </tr>
+                      <tr class="w-[100%] h-[100px] border-b-2">
+                        <td class="pl-5 text-[18px]">Pay With 
+                            <p class="pl-20"><i class="fa-solid fa-circle-play text-[12px]"></i> Paypal</p>
+                            <p class="pl-20"><i class="fa-solid fa-circle-play text-[12px]"></i> Visa</p>
+                            <p class="pl-20"><i class="fa-solid fa-circle-play text-[12px]"></i> Mastercard</p>
+                            <button class="font-bold text-[#28576f] mb-10 ml-20 mt-8"><a href="#">Apply Now</a></button>
+
+                        </td>
+
+                      </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#181d38] pb-10">
+        <div class="grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-1 px-5 justify-between pt-20 w-[90%] mx-auto text-white">
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] py-2">Contact</h4>
+                <span class="font-bold text-[17px]">Address: </span><span>562 Wellington Road, Street 32, San Francisco</span> <br>
+                <span class="font-bold text-[17px] ">Phone: </span><span> +01 2222 365 / (+91) 01 2345 6789</span> <br>
+                <span class="font-bold text-[17px] ">Hours:</span><span> 10:00, Mon - Sat</span> <br>
+                <p class="mt-8">
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-whatsapp"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-linkedin"></i></span>
+                    <span class="text-[20px] border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#06BBCC]"><i class="fa-brands fa-twitter"></i></span>
+                </p>
+            </div> 
+            <div class=" my-10">
+                <h4 class="font-bold text-[18px]">About</h4>
+                <p class="pt-2"><a href="#">About Us</a></p>
+                <p class="pt-2"><a href="#">Privacy Policy</a></p>
+                <p class="pt-2"><a href="#">Terms & Conditions</a></p>
+                <p class="pt-2"><a href="#">Contact</a></p>
+            </div>
+            <div class="my-10">
+                <h4 class="font-bold text-[18px] pb-2">My Account</h4>
+                <div class=" text-[17px] ">
+                    <p ><a href="#">Sign In</a></p>
+                    <p class="pt-2"><a href="#">View Cart</a><p>
+                    <p class="pt-2"><a href="#">My Wishlist</a></p>
+                    <p class="pt-2"><a href="#">Help</a></span>
+                </div>
+            </div>
+            <div class="col-span-2 my-10">
+                <h4 class="font-bold text-[18px] pl-2">Install App</h4>
+                <p class="pt-2 pl-2">From App Store or Google Play</p>
+                <div class="flex mt-2">
+                    <span><img class="w-[90%] mx-auto border-2" src="img/app.jpg" alt=""></span>
+                    <span><img class="w-[90%] mx-auto border-2" src="img/play.jpg" alt=""></span>
+                </div>
+                <p class="pt-2 pl-2">Secured Payment Gateways</p>
+                <div class="ml-2 mt-2">
+                    <img src="img/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="text-white text-[15px] pt-5">2023, Always Support - HTML Tailwind CSS And JAVASCRIPT  Copyright @2023 University. Designed By : MD ARAFAT</p>
+        </div>
+    </footer>
+
+     <script src="main.js"></script>
+</body>
+</html
